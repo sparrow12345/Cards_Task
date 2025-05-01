@@ -82,7 +82,7 @@ export default function CardsView() {
       <Header onRefresh={handleRefresh} disabled={disabled} />
       <main className="min-h-screen pt-20 pb-12 flex flex-col items-center justify-center">
         {loading && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {[...Array(7)].map((_, index) => <SkeletonCard key={index} />)}
           </div>
         )}
@@ -95,7 +95,7 @@ export default function CardsView() {
           </div>
         )}
         {!loading && !error && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {cards.map((card: cardPropsWithId) => <Card key={card.id} data={{
               title: card.title,
               text: card.text
