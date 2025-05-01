@@ -85,4 +85,4 @@ This project is for evaluation and educational purposes only.
 
 ## ✍️ Author
 
-Developed by [Your Name](https://github.com/your-username)
+Developed by [Majed Naser](https://github.com/sparrow12345)
